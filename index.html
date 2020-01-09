@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@
                     <div div="" class="flex-row">
                             <a class="navbar-brand" href="#">ETERMIA</a>
                             <ul class="navbar-nav ml-auto flex-row menu">
-                                    <li class="nav-item"><a class="nav-link" href="#shows">Shows</a></li>
+                                   <!-- <li class="nav-item"><a class="nav-link" href="#shows">Shows</a></li>-->
                                     <li class="nav-item"><a class="nav-link" href="#musicas">Músicas</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
                                     <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
@@ -29,30 +29,89 @@
                     </div>
             </nav>
             <div class="redes_sociais flex-column">
-                    <ul class="navbar-nav socialmedia  ">
+                    <ul class="navbar-nav socialmedia">
                             <li class="socialmedia"><a class="nav-link px-2" href="https://www.facebook.com/bandaetermia/" title="Facebook"><span class="fa fa-facebook"></span></a></li>
                             <li class="socialmedia"><a class="nav-link px-2" href="https://www.instagram.com/etermia.oficial" title="Instagram"><span class="fa fa-instagram"></span></a></li>
                             <li class="socialmedia"><a class="nav-link px-2" href="https://www.youtube.com/channel/UCsXUb0v57p9jgX8QyVgNXug" title="YouTube"><span class="fa fa-youtube"></span></a></li>
                             <li class="socialmedia"><a class="nav-link px-2" href="https://open.spotify.com/artist/7xroRLKmIuwW35P2wAwsEM?si=KTyKGRaIQN-776f1Owmf9g" title="Spotify"><span class="fa fa-spotify"></span></a></li>
                         </ul>
             </div>
-        <section class="shows" id="shows">
-
-        </section>
-        <section class="musicas" id="musicas">
+        <!--<section class="shows" id="shows">
+            <table style="width:100%">
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Age</th>
+                </tr>
+                <tr>
+                  <td>Jill</td>
+                  <td>Smith</td>
+                  <td>50</td>
+                </tr>
+                <tr>
+                  <td>Eve</td>
+                  <td>Jackson</td>
+                  <td>94</td>
+                </tr>
+              </table>
+        </section>-->
+        <section class="musicas parallax" id="musicas">
             <h2>MÚSICAS</h2>
             <div class="iframes">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/F13o0OmwlSs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GSJxvPIOUv8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           
-         
+                <div class="item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/F13o0OmwlSs" frameborder="0" allow="accelerometer;  autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GSJxvPIOUv8" frameborder="0" allow="accelerometer;  autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="item">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/IPNEXEHHKW4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                
             </div>
         </section>   
             <section class="fotos" id="fotos">
                 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
                 <div class="elfsight-app-60cc4b06-dddb-44dc-b8d3-18a874dc9aee"></div>
             </section>
-        <section class="contatos" id ="contatos"></section>
+        <section class="contatos" id="contato">
+            <h2>FALE CONOSCO</h2>
+            <div class="informacoes">
+                <div class="item">
+                    <img src="img/LogoEtermia.jpg"/>
+                </div>
+                <div class="item textos">
+                    <div class="contato-item">
+                        <i class="fa fa-map-marker"></i><p>Baixada Santista - São Paulo / Brasil</p>
+                        
+                    </div>
+                    
+                    <div class="contato-item">
+                        <i class="fa fa-envelope"></i><p>bandaetermiaoficial@gmail.com</p>
+                    </div>
+                    <div class="contato-item">
+                        <i class="fa fa-phone"></i><p>(13) 99121-4773</p>
+                    </div>
+                    <div class="contato-item">
+                        <a class="nav-link px-2" href="https://www.facebook.com/bandaetermia/" title="Facebook">
+                            <i class="fa fa-facebook"></i><p>Banda Etermia</p>
+                        </a>
+                    </div>
+                    <div class="contato-item">
+                        <a class="nav-link px-2" href="https://www.instagram.com/etermia.oficial" title="Instagram">
+                             <i class="fa fa-instagram"></i><p>@etermia.oficial</p>
+                        </a>
+                    </div>
+                    <div class="contato-item">
+                        <a class="nav-link px-2" href="https://www.youtube.com/channel/UCsXUb0v57p9jgX8QyVgNXug" title="YouTube">
+                            <i class="fa fa-youtube"></i><p>Banda Etermia</p>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
    
     <div class="footer"></div>
@@ -64,37 +123,5 @@
     </script>
 </body>
 </html>
-<!-- <section class="content-header reversepallete" id="content-header" data-toggle="affix">
-                        <div class="container">
-            
-            
-                        <nav class="navbar navbar-expand-sm navbar-dark">
-            
-                            <div div="" class="flex-row">
-                                <a class="navbar-brand" href="#">ETERMIA</a>
-                                <ul class="navbar-nav socialmedia d-inline-flex ">
-                                    <li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/bandaetermia/" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-                                    <li class="nav-item"><a class="nav-link px-2" href="https://www.instagram.com/etermia.oficial" title="Instagram"><span class="fa fa-instagram"></span></a></li>
-                                    <li class="nav-item"><a class="nav-link px-2" href="https://www.youtube.com/channel/UCsXUb0v57p9jgX8QyVgNXug" title="YouTube"><span class="fa fa-youtube"></span></a></li>
-                                    <li class="nav-item"><a class="nav-link px-2" href="https://open.spotify.com/artist/7xroRLKmIuwW35P2wAwsEM?si=KTyKGRaIQN-776f1Owmf9g" title="Spotify"><span class="fa fa-spotify"></span></a></li>
-                                </ul>
-                            </div>
-                            <div class="d-flex flex-row ">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                            </div>
-                            <div class="collapse navbar-collapse " id="navbarNavDropdown">
-                                <ul class="navbar-nav ml-auto">
-                                    <li class="nav-item"><a class="nav-link" href="#shows">Shows</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#musicas">Músicas</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-                                </ul>
-                            </div>
-                        </nav>		
-            
-                            
-                        </div>
-                    </section>-->
+
 

@@ -3,13 +3,22 @@ html, body {
     height: 100%;
     border:0;
     margin: 0;
+    font-family: "Etermia";
+}
+
+@font-face {
+  font-family: "Etermia";
+  src: url("../fonts/RINGM.TTF") format("truetype");
 }
 
 h2{
   margin:0;
-  padding-top: 15px;
-  font-size: 1.7em;
-  
+  padding-top: 5%;
+  font-size: 3em;
+  color:white;
+  font-family: "Etermia";
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: #000;
 }
 
 .header {
@@ -119,6 +128,7 @@ li a {
 
   .shows{
     background-color: black;
+    color :white ;
   }
   .musicas{
     display: block;
@@ -128,22 +138,87 @@ li a {
     background-color: black;
   }
   .contatos{
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 45px;
+    background-color: #080808;
+    color:white;
   }
-  .musicas>.iframes>iframe{
+  .musicas>.iframes>.item>iframe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    margin: 4%;
+    margin: auto;
     margin-top: 5%;
     margin-bottom: 5%;
   }
-  .musicas>h2{
+  h2{
     display: block;
     text-align: center;
+    margin: auto;
     
   }
+  .iframes{
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+
+  .item{
+    flex:1;
+  }
+  p{
+    float: left;
+    font-size: 1.2em;
+  }
+  i{
+    float: left;
+    padding: 17px;
+    font-size: 1.8em!important;
+  }
+
+  /*Parallax*/
+  .parallax {
+    /* The image used */
+    background-image: url("../img/BandaEtermia.jpg");
+  
+    /* Set a specific height */
+    height: 100%;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   /*Feed instagram*/
   #eapps-instagram-feed-1>a{
     display: none!important;
   }
+.contatos>h2{
+  color:#080808;
+  font-family: "Etermia";
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white;
+}
+.informacoes{
+  display: flex;
+}
+.contato-item{
+  display: flex;
+}
+.informacoes>.item>img{
+  float: right;
+}
+.localizacao{
+  display: block;
+}
+a{
+ text-decoration: none; 
+ color:white;
+}
+.textos{
+  padding-top: 5%;
+}

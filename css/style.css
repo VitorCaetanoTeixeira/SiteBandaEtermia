@@ -222,3 +222,29 @@ a{
 .textos{
   padding-top: 5%;
 }
+
+@media screen and (max-width: 890px) {
+
+  .informacoes>.item.logo{
+    display: none;
+  }
+  .contato-item{
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .musicas>.iframes>.item>iframe{
+    width: auto;
+  }
+ 
+}
+@media screen and (max-width: 650px) {
+  .redes_sociais{
+    display: none;
+  }
+  .contato-item{
+    padding: 0;
+  }
+  .musicas>.iframes>.item>iframe{
+    width: auto;
+  }
+}

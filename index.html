@@ -2,7 +2,7 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css"/>
@@ -17,23 +17,23 @@
     </header>
     <div class='content'>
 
-            <nav>
+            <nav class="menu_principal">
                     <div div="" class="flex-row">
                             <a class="navbar-brand" href="#">ETERMIA</a>
                             <ul class="navbar-nav ml-auto flex-row menu">
                                    <!-- <li class="nav-item"><a class="nav-link" href="#shows">Shows</a></li>-->
-                                    <li class="nav-item"><a class="nav-link" href="#musicas">Músicas</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                                    <li class="nav-item"><a class="" href="#musicas">Músicas</a></li>
+                                    <li class="nav-item"><a class="" href="#fotos">Fotos</a></li>
+                                    <li class="nav-item"><a class="" href="#contato">Contato</a></li>
                                 </ul>
                     </div>
             </nav>
             <div class="redes_sociais flex-column">
                     <ul class="navbar-nav socialmedia">
-                            <li class="socialmedia"><a class="nav-link px-2" href="https://www.facebook.com/bandaetermia/" title="Facebook"><span class="fa fa-facebook"></span></a></li>
-                            <li class="socialmedia"><a class="nav-link px-2" href="https://www.instagram.com/etermia.oficial" title="Instagram"><span class="fa fa-instagram"></span></a></li>
-                            <li class="socialmedia"><a class="nav-link px-2" href="https://www.youtube.com/channel/UCsXUb0v57p9jgX8QyVgNXug" title="YouTube"><span class="fa fa-youtube"></span></a></li>
-                            <li class="socialmedia"><a class="nav-link px-2" href="https://open.spotify.com/artist/7xroRLKmIuwW35P2wAwsEM?si=KTyKGRaIQN-776f1Owmf9g" title="Spotify"><span class="fa fa-spotify"></span></a></li>
+                            <li class="socialmedia"><a class="px-2" href="https://www.facebook.com/bandaetermia/" title="Facebook"><span class="fa fa-facebook"></span></a></li>
+                            <li class="socialmedia"><a class="px-2" href="https://www.instagram.com/etermia.oficial" title="Instagram"><span class="fa fa-instagram"></span></a></li>
+                            <li class="socialmedia"><a class="px-2" href="https://www.youtube.com/channel/UCsXUb0v57p9jgX8QyVgNXug" title="YouTube"><span class="fa fa-youtube"></span></a></li>
+                            <li class="socialmedia"><a class="px-2" href="https://open.spotify.com/artist/7xroRLKmIuwW35P2wAwsEM?si=KTyKGRaIQN-776f1Owmf9g" title="Spotify"><span class="fa fa-spotify"></span></a></li>
                         </ul>
             </div>
         <!--<section class="shows" id="shows">
@@ -94,25 +94,56 @@
                         <i class="fa fa-phone"></i><p>(13) 99121-4773</p>
                     </div>
                     <div class="contato-item">
-                        <a class="nav-link px-2" href="https://www.facebook.com/bandaetermia/" title="Facebook">
+                        <a class="px-2" href="https://www.facebook.com/bandaetermia/" title="Facebook">
                             <i class="fa fa-facebook"></i><p>Banda Etermia</p>
                         </a>
                     </div>
                     <div class="contato-item">
-                        <a class="nav-link px-2" href="https://www.instagram.com/etermia.oficial" title="Instagram">
+                        <a class="px-2" href="https://www.instagram.com/etermia.oficial" title="Instagram">
                              <i class="fa fa-instagram"></i><p>@etermia.oficial</p>
                         </a>
                     </div>
                     <div class="contato-item">
-                        <a class="nav-link px-2" href="https://www.youtube.com/channel/UCsXUb0v57p9jgX8QyVgNXug" title="YouTube">
+                        <a class="px-2" href="https://www.youtube.com/channel/UCsXUb0v57p9jgX8QyVgNXug" title="YouTube">
                             <i class="fa fa-youtube"></i><p>Banda Etermia</p>
                         </a>
                         
                     </div>
+                    <div class="contato-item">
+                        <a class="px-2" href="https://open.spotify.com/artist/7xroRLKmIuwW35P2wAwsEM?si=KTyKGRaIQN-776f1Owmf9g" title="Spotify">
+                            <i class="fa fa-spotify"></i><p>ETERMIA</p></a>
+                    </div>
                 </div>
             </div>
         </section>
+
+       
     </div>
+    <div class="menum visible">
+        <nav class="menu__nav">
+          <ul class="r-list menu__list">
+            <li class="menu__group">
+              <a href="#" class="nav-link"><img class="logomenu" src="img/Logo.jpg"/></a>
+            </li>
+            <li class="menu__group">
+                <a class="nav-link" href="#musicas">Músicas</a>
+            </li>
+            <li class="menu__group">
+                <a class="nav-link" href="#fotos">Fotos</a>
+            </li>
+            <li class="menu__group">
+                <a class="nav-link" href="#contato">Contato</a>
+            </li>
+           </ul>
+        </nav>
+        <div class="menu__toggle">
+          <button class="r-button menu__hamburger">
+            <span class="m-hamburger">
+              <span class="m-hamburger__label">menu</span>
+            </span>
+          </button>
+        </div>  
+      </div>
    
     <div class="footer"></div>
     <script>
@@ -120,6 +151,41 @@
         let item = document.querySelector("#eapps-instagram-feed-1>a");
         item.style.display = "none";
     });
+
+
+    (function(){
+    'use strict';
+
+        class Menu {
+            constructor(settings) {
+            this.menuNode = settings.menuNode;
+            }
+            
+            toggleMenuState(className) {      
+            if (typeof className !== 'string' || className.length === 0) {
+                return console.log('you did not give the class for toggleState function');
+            } 
+            return  this.menuNode.classList.toggle(className);
+            }
+        }
+
+        const jsMenuNode = document.querySelector('.menum');
+        const demoMenu = new Menu ({
+            menuNode: jsMenuNode
+        });
+        
+        function callMenuToggle(event) {
+            demoMenu.toggleMenuState('menu_activated');
+        }
+        
+        jsMenuNode.querySelector('.menu__hamburger').addEventListener('click', callMenuToggle);
+        const links = jsMenuNode.querySelectorAll('.nav-link');
+        links.forEach(function(link){
+            link.addEventListener('click', callMenuToggle);
+        })
+        
+        
+    })();
     </script>
 </body>
 </html>
